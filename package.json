@@ -1,0 +1,25 @@
+{
+  "name": "fast-react-code",
+  "displayName": "Fast React Code",
+  "description": "A collection of useful snippets to allow developers coding faster.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheAldex/html-vscode-snippets-extension.git"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

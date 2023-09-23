@@ -3,10 +3,10 @@
   "displayName": "Fast React Code",
   "description": "A collection of useful snippets to allow developers coding faster.",
   "version": "0.0.1",
+  "icon": "images/icon.png",
   "engines": {
-    "vscode": "^1.82.0"
+    "vscode": "^1.11.0"
   },
-  "icon": "icon.png",
   "categories": [
     "Snippets"
   ],
@@ -14,7 +14,11 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets.json"
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
       }
     ]
   }

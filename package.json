@@ -1,30 +1,24 @@
 {
-  "name": "fast-react-code",
-  "displayName": "React Code Snippets",
-  "description": "A collection of useful snippets to allow developers coding faster",
-  "version": "1.0.0",
-  "publisher": "TheAldex",
-  "icon": "images/icon.png",
-  "license": "MIT",
+  "name": "React Code Snippets",
+  "displayName": "fast-react-code",
+  "description": "A collection of React Snippets",
+  "icon": "./icon.png",
+  "version": "0.0.1",
   "engines": {
     "vscode": "^1.11.0"
   },
   "categories": [
     "Snippets"
   ],
-  "galleryBanner": {
-    "color": "#99424f",
-    "theme": "light"
-  },
   "contributes": {
     "snippets": [
       {
-        "language": "javascript",
-        "path": "./snippets/snippets.json"
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.code-snippets"
       },
       {
-        "language": "javascriptreact",
-        "path": "./snippets/snippets.json"
+        "language": "javascrip",
+        "path": "./snippets/snippets.code-snippets"
       }
     ]
   }

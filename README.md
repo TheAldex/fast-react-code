@@ -1,6 +1,6 @@
-# fast-react-code README
+# react-code-snippets README
 
-This is the README for your extension "fast-react-code". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "react-code-snippets". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 

@@ -1,101 +1,110 @@
 {
   "useState Hook Template": {
     "prefix": "!us",
-    "body": ["const [value, setValue] = useState(initialState);"],
+    "body": [
+      "const [${1:value}, ${2:setValue}] = useState(${3:initialState});"
+    ],
     "description": "useState Hook Template"
   },
+
   "useEffect Hook Template": {
     "prefix": "!ue",
-    "body": [
-      "useEffect((args) => {",
-      " //feature to change",
-      "}, [dependencies]);"
-    ],
+    "body": ["useEffect((${3}) => {", "\t${1}", "}, [${2:dependencies}]);"],
     "description": "useEffect Hook Template"
   },
+
   "useContext Hook Template": {
     "prefix": "!uc",
-    "body": ["const value = useContext(YourContext);"],
+    "body": ["const ${1:value} = useContext(${2:yourContext});"],
     "description": "useContext Hook Template"
   },
+
   "useReducer Hook Template": {
     "prefix": "!ur",
     "body": [
-      "const [state, dispatch] = useReducer(reducer, initialArg, init?);"
+      "const [${1:state}, ${2:dispatch}] = useReducer(${3:reducer}, ${4:initialArg}, init?);"
     ],
     "description": "useReducer Hook Template"
   },
+
   "useCallback Hook Template": {
     "prefix": "!ucall",
     "body": [
-      "const memoizedCallback = useCallback(",
-      " () => {",
-      "   doSomething(a, b);",
-      " }, [a, b]",
+      "const ${1:memoizedCallback} = useCallback(",
+      "\t() => {",
+      "\t\t${2}",
+      "\t}, [${3}]",
       ");"
     ],
     "description": "useCallback Hook Template"
   },
+
   "useMemo Hook Template": {
     "prefix": "!um",
-    "body": ["const cachedValue = useMemo(calculateValue, dependencies)"],
+    "body": [
+      "const ${1:cachedValue} = useMemo(${2:calculateValue}, ${3:dependencies})"
+    ],
     "description": "useMemo Hook Template"
   },
+
   "useRef Hook Template": {
     "prefix": "!uref",
-    "body": ["const refContainer = useRef(initialValue);"],
+    "body": ["const ${1:refContainer} = useRef(${2:initialValue});"],
     "description": "useRef Hook Template"
   },
+
   "useImperativeHandle Hook Template": {
     "prefix": "!uimp",
     "body": [
-      "useImperativeHandle(ref, () => {",
-      " return {",
-      "   // your methods",
-      " };",
-      "}, [dependencies]);"
+      "useImperativeHandle(${1:ref}, () => {",
+      "\treturn {",
+      "\t\t${2}",
+      "\t};",
+      "}, [${3:dependecies}]);"
     ],
     "description": "useImperativeHandle Hook Template"
   },
+
   "useLayoutEffect Hook Template": {
     "prefix": "!ulay",
-    "body": ["useLayoutEffect(setup, dependencies?);"],
+    "body": ["useLayoutEffect(${1:setup}, dependencies?);"],
     "description": "useLayoutEffect Hook Template"
   },
+
   "useDebugValue Hook Template": {
     "prefix": "!udebug",
-    "body": ["useDebugValue(value, format?);"],
+    "body": ["useDebugValue(${1:value}, format?);"],
     "description": "useDebugValue Hook Template"
   },
+
   "useDeferredValue Hook Template": {
     "prefix": "!udef",
-    "body": ["const deferredValue = useDeferredValue(value);"],
+    "body": ["const ${1:deferredValue} = useDeferredValue(${2:value});"],
     "description": "useDeferredValue Hook Template"
   },
+
   "useTransition Hook Template": {
     "prefix": "!ut",
-    "body": ["const [isPending, startTransition] = useTransition();"],
+    "body": ["const [${1:isPending}, ${2:startTransition}] = useTransition();"],
     "description": "useTransition Hook Template"
   },
+
   "useId Hook Template": {
     "prefix": "!uid",
-    "body": ["const id = useId();"],
+    "body": ["const ${1:id} = useId();"],
     "description": "useId Hook Template"
   },
   "useSyncExternalStore Hook Template": {
     "prefix": "!usync",
     "body": [
-      "const snapshot = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot?);"
+      "const ${1:snapshot} = useSyncExternalStore(${2:subscribe}, ${3:getSnapshot}, getServerSnapshot?);"
     ],
     "description": "useSyncExternalStore Hook Template"
   },
+
   "useInsertionEffect Hook Template": {
     "prefix": "!uins",
-    "body": [
-      "useInsertionEffect(() => {",
-      "  // inject <style> tags here",
-      "});"
-    ],
+    "body": ["useInsertionEffect((${2}) => {", "\t${1:style tags}", "});"],
     "description": "useInsertionEffect Hook Template"
   }
 }

@@ -1,9 +1,7 @@
 {
   "useState Hook Template": {
     "prefix": "!us",
-    "body": [
-      "const [${1:value}, ${2:setValue}] = useState(${3:initialState});"
-    ],
+    "body": "const [${1:value}, ${2:setValue}] = useState(${3:initialState});",
     "description": "useState Hook Template"
   },
 
@@ -15,15 +13,13 @@
 
   "useContext Hook Template": {
     "prefix": "!uc",
-    "body": ["const ${1:value} = useContext(${2:yourContext});"],
+    "body": "const ${1:value} = useContext(${2:yourContext});",
     "description": "useContext Hook Template"
   },
 
   "useReducer Hook Template": {
     "prefix": "!ur",
-    "body": [
-      "const [${1:state}, ${2:dispatch}] = useReducer(${3:reducer}, ${4:initialArg}, init?);"
-    ],
+    "body": "const [${1:state}, ${2:dispatch}] = useReducer(${3:reducer}, ${4:initialArg}, init?);",
     "description": "useReducer Hook Template"
   },
 
@@ -41,15 +37,13 @@
 
   "useMemo Hook Template": {
     "prefix": "!um",
-    "body": [
-      "const ${1:cachedValue} = useMemo(${2:calculateValue}, ${3:dependencies})"
-    ],
+    "body": "const ${1:cachedValue} = useMemo(${2:calculateValue}, ${3:dependencies})",
     "description": "useMemo Hook Template"
   },
 
   "useRef Hook Template": {
     "prefix": "!uref",
-    "body": ["const ${1:refContainer} = useRef(${2:initialValue});"],
+    "body": "const ${1:refContainer} = useRef(${2:initialValue});",
     "description": "useRef Hook Template"
   },
 
@@ -67,38 +61,36 @@
 
   "useLayoutEffect Hook Template": {
     "prefix": "!ulay",
-    "body": ["useLayoutEffect(${1:setup}, dependencies?);"],
+    "body": "useLayoutEffect(${1:setup}, dependencies?);",
     "description": "useLayoutEffect Hook Template"
   },
 
   "useDebugValue Hook Template": {
     "prefix": "!udebug",
-    "body": ["useDebugValue(${1:value}, format?);"],
+    "body": "useDebugValue(${1:value}, format?);",
     "description": "useDebugValue Hook Template"
   },
 
   "useDeferredValue Hook Template": {
     "prefix": "!udef",
-    "body": ["const ${1:deferredValue} = useDeferredValue(${2:value});"],
+    "body": "const ${1:deferredValue} = useDeferredValue(${2:value});",
     "description": "useDeferredValue Hook Template"
   },
 
   "useTransition Hook Template": {
     "prefix": "!ut",
-    "body": ["const [${1:isPending}, ${2:startTransition}] = useTransition();"],
+    "body": "const [${1:isPending}, ${2:startTransition}] = useTransition();",
     "description": "useTransition Hook Template"
   },
 
   "useId Hook Template": {
     "prefix": "!uid",
-    "body": ["const ${1:id} = useId();"],
+    "body": "const ${1:id} = useId();",
     "description": "useId Hook Template"
   },
   "useSyncExternalStore Hook Template": {
     "prefix": "!usync",
-    "body": [
-      "const ${1:snapshot} = useSyncExternalStore(${2:subscribe}, ${3:getSnapshot}, getServerSnapshot?);"
-    ],
+    "body": "const ${1:snapshot} = useSyncExternalStore(${2:subscribe}, ${3:getSnapshot}, getServerSnapshot?);",
     "description": "useSyncExternalStore Hook Template"
   },
 
@@ -106,5 +98,91 @@
     "prefix": "!uins",
     "body": ["useInsertionEffect((${2}) => {", "\t${1:style tags}", "});"],
     "description": "useInsertionEffect Hook Template"
-  }
+  },
+
+  "import React statement": {
+    "prefix": "!impr",
+    "body": "import React from 'react';",
+    "description": "import React statement"
+  },
+
+  "import function statement": {
+    "prefix": "!impf",
+    "body": "import { ${1} } from '${2}';",
+    "description": "import function statement"
+  },
+
+  "include file": {
+    "prefix": "!inc",
+    "body": "import '${1}';",
+    "description": "includo file"
+  },
+
+  "export default": {
+    "prefix": "!exp",
+    "body": "export default ${1};",
+    "description": "export default"
+  },
+
+  "export const": {
+    "prefix": "!expc",
+    "body": "export const ${1:name} = ${2};",
+    "description": "export const"
+  },
+
+  "component const template": {
+    "prefix": "!cc",
+    "body": [
+      "import React, { ${3} } from 'react'",
+      "",
+      "const ${1:componentName} = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t${2}",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      "",
+      "export default ${1:componentName};"
+    ],
+    "description": "component const class template"
+  },
+
+  "component class template": {
+    "prefix": "!ccl",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "class ${1:componentName} extends Component {",
+      "\trender (",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t${2}",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t);",
+      "}",
+      "",
+      "export default ${1:componentName};"
+    ],
+    "description": "component class template"
+  },
+
+  "component function template": {
+    "prefix": "!cf",
+    "body": [
+      "import React, { ${4} } from 'react'",
+      "",
+      "function ${1:componentName}(${3}) {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t${2}",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      "",
+      "export default ${1:componentName};"
+    ],
+    "description": "component function template"
+  },
 }

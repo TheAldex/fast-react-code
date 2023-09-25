@@ -1,9 +1,22 @@
 {
-  "name": "React Code Snippets",
-  "displayName": "fast-react-code",
+  "name": "fast-react-code",
+  "displayName": "Fast React Code Extension",
   "description": "A collection of React Snippets",
+  "publisher": "Aldexdev",
   "icon": "./icon.png",
-  "version": "0.0.1",
+  "keywords": [
+    "snippets",
+    "react",
+    "redux",
+    "react-native",
+    "javascript"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheAldex/fast-react-code"
+  },
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.11.0"
   },

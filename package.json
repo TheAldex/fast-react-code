@@ -3,7 +3,7 @@
   "displayName": "Fast React Code Extension",
   "description": "A collection of React Snippets",
   "publisher": "Aldexdev",
-  "icon": "./icon.png",
+  "icon": "./images/icon.png",
   "keywords": [
     "snippets",
     "react",

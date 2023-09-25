@@ -1,65 +1,58 @@
-# react-code-snippets README
+# Fast React Code
 
-This is the README for your extension "react-code-snippets". After writing up a brief description, we recommend including the following sections.
+## React Code Snippets Extension for VIsual Studio Code
+
+An extension for Visual Studio Code which includes a collection of snippets to use while coding with React (https://react.dev/learn).
+
+## Installation and Usage
+
+In order to install an extension you need to launch the Command Palette (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
+There you have either the option to show the already installed snippets or install new ones.
+
+As VS Code from version 0.10.10 supports React components syntax inside js files the snippets are available for JavaScript language as well.
+In the following example you can see the usage of a React stateless component with prop types snippets inside a js and not jsx file.
+
+## Supported languages (file extensions)
+
+- JavaScript (.js)
+- TypeScript (.ts)
+- JavaScript React (.jsx)
+- TypeScript React (.tsx)
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+The different snippets, their use and their trigger within the editor are described below. The **⇥** means the `TAB` key (or, alternatively, `ENTER` key).
 
-For example if there is an image subfolder under your extension project workspace:
+### React Hooks
 
-\!\[feature X\]\(images/feature-x.png\)
+|  Trigger | Content                                                          |
+| -------: | ---------------------------------------------------------------- |
+|   `!us→` | useState Hook Template skeleton                                  |
+|   `!ue→` | useEffect Hook Template                                          |
+|   `!uc→` | useContext Hook Template                                         |
+|   `!ur→` | uuseReducer Hook Template                                        |
+|   `!ucall→` | useCallback Hook Template                                     |
+|   `!um→` | useMemo Hook Template                                            |
+|   `!uref→` | useRef Hook Template                                           |
+|   `!uimp→` | useImperativeHandle Hook Template                              |
+|   `!ulay→` | useLayoutEffect Hook Template                                  |
+|   `!udeb→` | useDebugValue Hook Template                                    |
+|   `!udef→` | useDeferredValue Hook Template                                 |
+|   `!ut→` | useTransition Hook Template                                      |
+|   `!uid→` | useId Hook Template                                             |
+|   `!usync→` | useSyncExternalStore Hook Template                            |
+|   `!uins→` | suseInsertionEffect Hook Template                              |
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### React Components Skeletons
 
-## Requirements
+|  Trigger | Content                                                          |
+| -------: | ---------------------------------------------------------------- |
+|   `!impr→` | import React statement                                         |
+|   `!impf→` | import function statement                                      |
+|   `!inc→` | includo file                                                    |
+|   `!exp→` | export default                                                  |
+|   `!expc→` | export const                                                   |
+|   `!cc→` | component const class template                                   |
+|   `!ccl→` | component class template                                        |
+|   `!cf→` | component function template                                      |
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

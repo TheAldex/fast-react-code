@@ -27,7 +27,7 @@ The different snippets, their use and their trigger within the editor are descri
 
 |  Trigger | Content                                                          |
 | -------: | ---------------------------------------------------------------- |
-|   `!us→` | useState Hook Template skeleton                                  |
+|   `!us→` | useState Hook Template                                           |
 |   `!ue→` | useEffect Hook Template                                          |
 |   `!uc→` | useContext Hook Template                                         |
 |   `!ur→` | uuseReducer Hook Template                                        |
